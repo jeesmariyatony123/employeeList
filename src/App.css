@@ -1,0 +1,14 @@
+body{
+  background-image: linear-gradient(130deg,rgb(155, 178, 246),rgb(183, 242, 249),rgb(162, 255, 162));
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.divbtn{
+float: left;
+}
+
+.employeecreate{
+  overflow: hidden;
+}
