@@ -36,7 +36,7 @@ const EmpEdit = () => {
     const empdata = { id, name, email, phone, active };
 
 
-    fetch("http://localhost:3000/employee/" + empid, {
+    fetch(`${SERVER_URL}/` + empid, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(empdata)

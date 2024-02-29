@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import { SERVER_URL } from "../services/server_url"
+import { SERVER_URL } from '../services/server_url';
 
 const EmpListing = () => {
     const [empdata, empdatachange] = useState(null)
@@ -11,7 +11,7 @@ const EmpListing = () => {
     }
     const removeFunction = (id) => {
         if (window.confirm('Do you want to remove?')) {
-            fetch( `${SERVER_URL}/` + id, {
+            fetch(`${SERVER_URL}` + id, {
                 method: "DELETE"
             }).then((res) => {
                 alert('Removed successfully.')
